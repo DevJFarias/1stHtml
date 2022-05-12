@@ -1,0 +1,77 @@
+ <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/17c8d8b0ec.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css"> 
+    <title>Joao Farias</title>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>JF</h1>
+        </div>
+        <ul>
+            <li>
+                <a target="blank" href="https://www.linkedin.com/in/jpa-farias">LinkedIn</a>
+            </li>
+            <li>
+                <a target="blank" href="mailto:jpafarias17@icloud.com">Email</a>
+            </li>
+            <li>
+                <a target="blank" href="https://wa.me/+553182671383">WhastApp</a>
+            </li>
+        </ul>
+
+    </header>
+    <main>
+        <section class="container">
+            <div class="name">
+               <h1>João Farias</h1>
+               <h5>Front-End Developer Jr.</h5> 
+            </div>
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation" class="fa-solid fa-sort-down"></i>
+            </div>
+            <div style="display:none" id="about">
+                <p>
+                    Sou um cara apaixonado por tecnologia e a infinidade de coisas que ela nos proporciona diariamente, dentre elas, as soluções para problemas diários, seja em âmbito pessoal ou negócios. 
+                </p><br>
+                <P>
+                    Curso Analise e Desenvolvimento de Sistemas pela universidade Estácio e também Desenvolvedor Full Stack em formação pela Gama Academy.
+                </P><br>
+                <p>
+                    Deixe seu email abaixo para propostas, projetos ou se quiser bater um papo, Dev!
+                </p><br>
+                <p>
+                    Aahh, aproveita e me segue no LinkedIn, é só clicar ali em cima! Valeu!
+                </p>
+            </div>
+
+            <div class="form">
+                <div>
+                    <p>Deixe seu contato</p>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="Seu melhor email">
+                    <button>Enviar!</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function displayAbout() {
+            var arrow = document.getElementById('animation')
+            arrow.classList.toggle('rotate')
+            var display = document.getElementById('about')
+            display.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>
